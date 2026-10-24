@@ -10,15 +10,17 @@ This is a customized fork of OpenTutor for local personal use. **Windows native 
 
 - Import PDF, Word, PowerPoint, Markdown, text and webpages.
 - Preview a public GitHub repository, directory or file, then select which files to import.
-- Follow source-grounded Socratic questions, one pending question at a time.
+- Read foundations, complete worked examples and pitfalls before choosing to begin understanding checks and Socratic questions. Existing sessions can review foundations and return to the same question. AI-supplemented prerequisites are labeled.
 - Explain concepts in your own words through a Feynman-style exchange.
 - Practice with multiple-choice, written and coding tasks. Mistakes receive a small hint, with retries on the original question.
 - Set your background, goals and preferences at first launch, and adjust them in settings.
 - Choose a slower, profile-based or faster learning pace on the home page.
+- Open a global quick-question window using your configured model/API, quote selected lesson text, save answers into classroom notes and keep recent conversations locally. The original course agent remains in a separate tab.
+- Write classroom notes alongside a lesson, capture teaching points or selected text, autosave locally and export Markdown. AI organization produces a preview and appends only after confirmation. Connect a local Obsidian vault in Settings, explicitly export saved chapter notes, open them in Obsidian, or preview and import external edits. Conflicts block overwrites; previous versions are kept locally. No Obsidian plugin is required.
 - Keep courses, profiles, teaching history, submitted answers and progress locally.
 - Report teaching, question or grading problems from the learning interface.
 
-The learning cycle is **diagnosis → Socratic questioning → Feynman explanation → independent practice → transfer check**. Assisted completion and independent completion are recorded separately. Pace depends on the learner profile and observed answers; it is not a fixed speed multiplier. Changes apply to subsequent teaching turns or newly generated practice.
+The learning cycle is **foundations and worked examples → understanding check → Socratic questioning → Feynman explanation → independent practice → transfer check**. Assisted completion and independent completion are recorded separately. Pace depends on the learner profile and observed answers; it is not a fixed speed multiplier. Changes apply to subsequent teaching turns or newly generated practice.
 
 Coding tasks can involve reading, predicting output, finding bugs, modifying code or implementing a solution. Submitted code receives static AI review; the application does not compile or execute it. Hardware experiments and program execution take place outside the app.
 
@@ -121,7 +123,7 @@ For model failures, check the provider, endpoint, model name, credentials, netwo
 - `docs/guides/`: Feature and runtime documentation.
 - `.env.example`: Configuration template without real credentials.
 
-Guides: [GitHub import](docs/guides/github-import.zh-CN.md), [guided learning](docs/guides/guided-learning.zh-CN.md), [hint-first feedback](docs/guides/grading.zh-CN.md), [learner profile and pace](docs/guides/learning-pace.zh-CN.md), [Chinese localization](docs/guides/localization.zh-CN.md), [Windows launcher and backups](docs/guides/windows-native.zh-CN.md).
+Guides: [Classroom notes](docs/guides/classroom-notes.zh-CN.md), [GitHub import](docs/guides/github-import.zh-CN.md), [guided learning](docs/guides/guided-learning.zh-CN.md), [hint-first feedback](docs/guides/grading.zh-CN.md), [learner profile and pace](docs/guides/learning-pace.zh-CN.md), [Chinese localization](docs/guides/localization.zh-CN.md), [Windows launcher and backups](docs/guides/windows-native.zh-CN.md).
 
 For GitHub uploads, follow the [publishing guide](docs/publishing.zh-CN.md). Git ignore rules exclude credentials, databases, uploads, backups, dependencies, logs and local build output. Browser uploads should use files extracted from the clean source bundle.
 
